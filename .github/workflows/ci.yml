@@ -9,10 +9,10 @@ on:
 
 jobs:
   build:
-    runs-on: arc-action-runner-cj
+    runs-on: ubuntu-latest
     steps:
       - run: echo "build code"
       - run: |
           curl \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/Sitecore-PD-Sandbox/cd-workflow-poc-2/actions/workflows
+            https://api.github.com/repos/gnowleumas/gnowleumas2-pub-repo1/actions/workflows
