@@ -16,3 +16,9 @@ jobs:
           curl \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/gnowleumas/gnowleumas2-pub-repo1/actions/workflows
+      - run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/gnowleumas/gnowleumas2-pub-repo1/actions/workflows/27118217/dispatches \
+            -d '{"ref":"master"}'
