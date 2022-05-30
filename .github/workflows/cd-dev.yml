@@ -1,0 +1,13 @@
+name: cd-dev
+
+on:
+  workflow_dispatch:
+
+concurrency: ${{ github.workflow }} # equivalent to 'cd-dev'
+
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploy to DEV"
+      - run: echo "Run health check tests at DEV"
