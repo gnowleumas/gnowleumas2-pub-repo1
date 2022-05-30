@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write 
     steps:
       - run: echo "build code"
       - run: |
